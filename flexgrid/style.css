@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header_container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". .";
+    background-color: #565656;
+}
+
+.header_logo {
+    width: 50px;
+    margin: 10px 300px;
+}
+
+.header_menu {
+    padding: 20px 0;
+}
+
+.menu_item {
+    display: inline;
+    margin-right: 100px;
+    font-size: 25px;
+    color: rgb(231, 231, 231);
+}
+
+.footer {
+    background-color: #565656;
+    width: 100%;
+}
+
+.footer_text {
+    font-size: 40px;
+    color: rgb(231, 231, 231);
+    padding: 20px 0 50px 0;
+}
+
+.footer_container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."; 
+    justify-items: center; 
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer_text_container1 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."
+        "."
+        "."; 
+    justify-items: start; 
+    align-items: center; 
+    margin-left: 30px;
+}
+
+.footer_logo {
+    width: 200px;
+}
+
+.footer_text_container2 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."
+        "."
+        "."; 
+    justify-items: end; 
+    align-items: center; 
+    margin-right: 30px;
+}
+
+.footer_text_item {
+    color: rgb(231, 231, 231);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.main {
+    width: 100%;
+    background-color: black;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main_container_item {
+    --num-of-blocks: 3;
+    --blocks-margin: 10px;
+    --item-size: calc(33vw - 30px);
+    width: var(--item-size);
+    height: var(--item-size);
+    margin: var(--blocks-margin);
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    color: rgb(231, 231, 231);
+}
+
+#type1 {
+    background-image: url("space1.jpg");
+}
+
+#type2 {
+    background-image: url("space2.jpg");
+}
+
+#type3 {
+    background-image: url("space3.jpg");
+}
+
+#typetext {
+    font-size: 20px;
+    display: flex;
+    align-items: center
+}
+
+#typetext:before {
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores.";
+}
